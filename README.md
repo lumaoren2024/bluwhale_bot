@@ -4,16 +4,20 @@
 
 注册RF:https://profile.bluwhale.com/login?referral=4325a44f-7c59-49c8-ac01-923270982185
 
-## bluwhale_bot 1.0 项目教程
+## bluwhale_bot 2.0 项目教程
 
 ### config 配置目录说明
 ``token.txt``token一行一个
 ``proxy.txt``代理一行一个
 
 ### 怎么抓取token
-chrome->f12->网络
+chrome->F12 > 控制台
+```bash
+ const obj=JSON.parse(sessionStorage.getItem('firebaseUser'))
+ console.log(obj.displayName+'***'+obj.auth.apiKey+'***'+obj.stsTokenManager.refreshToken+'***'+obj.stsTokenManager.accessToken)
+```
+![教程](https://github.com/user-attachments/assets/35207d2e-606e-4593-b58e-200ffb97f22e)
 
-![截图](https://github.com/user-attachments/assets/d9c14134-86b7-44c0-bec7-a80011918ccd)
 
 ## 怎么运行 
 ```bash
